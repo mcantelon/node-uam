@@ -25,22 +25,46 @@ Normally you have to do this to end up running a local web application:
 
 With lam it's easier:
 
-1. Discover local web applications using "lam search"
-2. Install and run the local web applications using "lam install <package>"
+1. Discover local web applications using `lam search`
+2. Install and run the local web applications using `lam install <package>`
 
-Once you've installed a package using lam you can run it using
-"lam run <package>". If the package's name doesn't conflict with a lam
-command you can also run it using "lam <pacakge>".
+Once you've installed a package using lam you can run it using the following
+command syntax.
 
-To list packages that you've installed using lam, you can enter the command
-"lam ls" or "lam ls <search pattern>".
+    lam run <package>
 
-To list all packages that exist, you can enter the command "lam search" or
-"lam search <search pattern>".
+If the package's name doesn't conflict with a lam command you can also run it
+using the following command syntax.
+
+    lam <package>
+
+To list packages that you've installed using lam, you can use the following
+command syntax.
+
+    lam ls
+
+To only list packages with names matching a pattern, use the following command
+syntax.
+
+    lam ls <search pattern>
+
+Similarly, to search for packages you might want to install, you can use the
+following command syntax.
+
+    lam search
+
+To only show packages with names matching a pattern, use the following command
+syntax.
+
+    lam search <search pattern>
 
 ### Requirements
 
 lam requires Node and npm.
+
+### Installation ###
+
+    npm install lam
 
 ### Developers
 
@@ -67,6 +91,8 @@ which can only be run on a specific port:
     "start": "node /Users/mike/programming/js/lam/finance/app.js",
     "port": 3000
   }
+
+If you want an example of implementing a lam-friendly npm package, check out `lam-example`.
 
 ## License 
 
