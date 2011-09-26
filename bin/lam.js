@@ -30,15 +30,13 @@ commands = {
     }
   },
 
-/*
   'search': {
-    'syntax': ['search <pattern>'],
+    'syntax': ['search', 'search <pattern>'],
     'logic': function(args) {
       lam.search(args['pattern']);
       return true;
     }
   },
-*/
 
   'ls': {
     'syntax': ['ls', 'ls <pattern>'],
@@ -63,13 +61,14 @@ commands = {
 
 parser = new Parser(commands)
 
-// private command
-parser.addCommand('discover')
-.set('syntax', ['discover'])
+// private: update local package inventory with local package reposity
+parser.addCommand('update')
+.set('syntax', ['update'])
 .set('logic', function() {
-  lam.discover();
+  lam.update();
 });
 
+// private: download full npm repository and parse it for local packages
 parser.addCommand('download')
 .set('syntax', ['download'])
 .set('logic', function() {
