@@ -1,0 +1,15 @@
+{
+    "name": "lam"
+  , "version": "0.0.1"
+  , "description": "Local app"
+  , "keywords": []
+  , "author": "Mike Cantelon <mcantelon@gmail.com>"
+  , "dependencies": {
+    "optimist": ">= 0.1.6",
+    "mingy": ">= 0.2.5",
+    "request": ">= 2.1.1",
+    "underscore": ">= 1.1.7"
+  }
+  , "main": "index"
+  , "engines": { "node": "0.4.x" }
+}
