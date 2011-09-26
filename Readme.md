@@ -58,13 +58,11 @@ syntax.
 
     lam search <search pattern>
 
-### Requirements
+### Requirements and Installation
 
-lam requires Node and npm.
+lam requires Node and npm. Install using the following command.
 
-### Installation ###
-
-    npm install lam
+    npm install -g lam
 
 ### Developers
 
