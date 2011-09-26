@@ -90,7 +90,8 @@ which can only be run on a specific port:
     "port": 3000
   }
 
-If you want an example of implementing a lam-friendly npm package, check out `lam-example`.
+If you want an example of implementing a lam-friendly npm package, check
+out `lam-example` (https://github.com/mcantelon/node-lam-example).
 
 ## License 
 
