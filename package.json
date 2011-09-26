@@ -11,5 +11,8 @@
     "underscore": ">= 1.1.7"
   }
   , "main": "index"
+  , "bin" : {
+    "lam" : "./bin/lam.js"
+  }
   , "engines": { "node": "0.4.x" }
 }
