@@ -10,7 +10,7 @@
     "request": ">= 2.1.1",
     "underscore": ">= 1.1.7"
   }
-  , "main": "index"
+  , "main": "index.js"
   , "bin" : {
     "lam" : "./bin/lam.js"
   }
