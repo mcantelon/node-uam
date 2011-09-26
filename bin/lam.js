@@ -22,6 +22,14 @@ commands = {
     }
   },
 
+  'install': {
+    'syntax': ['install <package>'],
+    'logic': function(args) {
+      lam.install(args['package']);
+      return true;
+    }
+  },
+
   'help': {
     'syntax': ['help'],
     'logic': function() {
