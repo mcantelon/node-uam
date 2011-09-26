@@ -1,6 +1,4 @@
-# lam
-
-  Lam: making local web applications easy to discover and run.
+# lam: local web application manager
 
 Node-based local web applications are interesting. They can run on any
 operating system with Node installed on it. They are easy to write if you're
@@ -17,16 +15,16 @@ this by leveraging the Node Package Manager (npm).
 
 Normally you have to do this to end up running a local web application:
 
-1) Hear about the local web application
-2) Install the local web application
-3) Create a shell alias to conveniently run the local web application
-4) Run the local web application
-5) Navigate to the local web application in your browser
+1. Hear about the local web application
+2. Install the local web application
+3. Create a shell alias to conveniently run the local web application
+4. Run the local web application
+5. Navigate to the local web application in your browser
 
 With lam it's easier:
 
-1) Discover local web applications using "lam search"
-2) Install and run the local web applications using "lam install <package>"
+1. Discover local web applications using "lam search"
+2. Install and run the local web applications using "lam install <package>"
 
 Once you've installed a package using lam you can run it using
 "lam run <package>". If the package's name doesn't conflict with a lam
@@ -37,6 +35,10 @@ To list packages that you've installed using lam, you can enter the command
 
 To list all packages that exist, you can enter the command "lam search" or
 "lam search <search pattern>".
+
+### Requirements
+
+lam requires Node and npm.
 
 ### Developers
 
