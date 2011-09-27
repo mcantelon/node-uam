@@ -1,6 +1,6 @@
 # lam: local web application manager
 
-NOTE: Experimental, only opens browsers on OS X currently.
+NOTE: only opens browsers on Linux and OS X currently.
 
 Node-based local web applications are interesting. They can run on any
 operating system with Node installed on it. They are easy to write if you're
