@@ -69,20 +69,6 @@ commands = {
 
 parser = new Parser(commands)
 
-// private: update local package inventory with local package reposity
-parser.addCommand('update')
-.set('syntax', ['update'])
-.set('logic', function() {
-  lam.update();
-});
-
-// private: download full npm repository and parse it for local packages
-parser.addCommand('download')
-.set('syntax', ['download'])
-.set('logic', function() {
-  lam.download();
-});
-
 parser.addCommand('test')
 .set('syntax', ['test'])
 .set('logic', function() {
