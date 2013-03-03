@@ -30,6 +30,14 @@ commands = {
     }
   },
 
+  'rm': {
+    'syntax': ['rm <package>'],
+    'logic': function(args) {
+      lam.uninstall(args['package']);
+      return true;
+    }
+  },
+
   'help': {
     'syntax': ['help'],
     'logic': function() {
