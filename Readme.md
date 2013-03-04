@@ -1,4 +1,4 @@
-# lam: local web application manager
+# uam: unhosted web application manager
 
 NOTE: only opens browsers on Linux and OS X currently.
 
@@ -11,8 +11,8 @@ Local web applications feel a bit weird to use though. If you use them
 regularly you end up having to do things like creating shell aliases to run
 them. There is also no definitive list of them to search through to find them.
 
-This tool attempts to improve the situation a bit. lam makes it easy to
-discover local web applications and launch them in the browser. lam does
+This tool attempts to improve the situation a bit. uam makes it easy to
+discover local web applications and launch them in the browser. uam does
 this by leveraging the Node Package Manager (npm). 
 
 Normally you have to do this to end up running a local web application:
@@ -23,46 +23,46 @@ Normally you have to do this to end up running a local web application:
 4. Run the local web application
 5. Navigate to the local web application in your browser
 
-With lam it's easier:
+With uam it's easier:
 
-1. Discover local web applications using `lam search`
-2. Install and run the local web applications using `lam install <package>`
+1. Discover local web applications using `uam search`
+2. Install and run the local web applications using `uam install <package>`
 
-Once you've installed a package using lam you can run it using the following
+Once you've installed a package using uam you can run it using the following
 command syntax.
 
-    lam run <package>
+    uam run <package>
 
-If the package's name doesn't conflict with a lam command you can also run it
+If the package's name doesn't conflict with a uam command you can also run it
 using the following command syntax.
 
-    lam <package>
+    uam <package>
 
-To list packages that you've installed using lam, you can use the following
+To list packages that you've installed using uam, you can use the following
 command syntax.
 
-    lam ls
+    uam ls
 
 To only list packages with names matching a pattern, use the following command
 syntax.
 
-    lam ls <search pattern>
+    uam ls <search pattern>
 
 Similarly, to search for packages you might want to install, you can use the
 following command syntax.
 
-    lam search
+    uam search
 
 To only show packages with names matching a pattern, use the following command
 syntax.
 
-    lam search <search pattern>
+    uam search <search pattern>
 
 ### Requirements and Installation
 
-lam requires Node and npm. Install using the following command.
+uam requires Node and npm. Install using the following command.
 
-    npm install -g lam
+    npm install -g uam
 
 ### Developers
 
@@ -86,12 +86,12 @@ Here's an example package.json specification for a local web application
 which can only be run on a specific port:
 
   "local": {
-    "start": "node /Users/mike/programming/js/lam/finance/app.js",
+    "start": "node /Users/mike/programming/js/uam/finance/app.js",
     "port": 3000
   }
 
-If you want an example of implementing a lam-friendly npm package, check
-out `lam-example` (https://github.com/mcantelon/node-lam-example).
+If you want an example of implementing a uam-friendly npm package, check
+out `uam-example` (https://github.com/mcantelon/node-uam-example).
 
 ## License 
 

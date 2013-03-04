@@ -1,1 +1,1 @@
-module.exports = require('./lib/lam.js');
+module.exports = require('./lib/uam.js');
