@@ -1,8 +1,8 @@
 {
-    "name": "lam"
-  , "version": "0.0.5"
-  , "description": "Local app"
-  , "keywords": []
+    "name": "uam"
+  , "version": "0.0.1"
+  , "description": "Unhosted application manager"
+  , "keywords": ["unhosted", "application", "manager"]
   , "author": "Mike Cantelon <mcantelon@gmail.com>"
   , "dependencies": {
     "optimist": ">= 0.1.6",
@@ -12,7 +12,7 @@
   }
   , "main": "index.js"
   , "bin" : {
-    "lam" : "./bin/lam.js"
+    "uam" : "./bin/uam.js"
   }
   , "engines": { "node": "0.4.x" }
 }
