@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /*!
-* lam
+* uam
 * Copyright(c) 2011 Mike Cantelon
 * MIT Licensed
 */
@@ -9,7 +9,7 @@
 var mingy = require('mingy')
   , Parser = mingy.Parser
   , argv = require('optimist').argv
-  , lam = require('../lib/lam.js')
+  , uam = require('../lib/uam.js')
   , commands;
 
 commands = {
@@ -17,7 +17,7 @@ commands = {
   'run': {
     'syntax': ['run <package>'],
     'logic': function(args) {
-      lam.run(args['package']);
+      uam.run(args['package']);
       return true;
     }
   },
@@ -25,7 +25,7 @@ commands = {
   'install': {
     'syntax': ['install <package>'],
     'logic': function(args) {
-      lam.install(args['package']);
+      uam.install(args['package']);
       return true;
     }
   },
@@ -33,7 +33,7 @@ commands = {
   'rm': {
     'syntax': ['rm <package>'],
     'logic': function(args) {
-      lam.uninstall(args['package']);
+      uam.uninstall(args['package']);
       return true;
     }
   },
@@ -41,7 +41,7 @@ commands = {
   'help': {
     'syntax': ['help'],
     'logic': function() {
-      lam.usage(commands);
+      uam.usage(commands);
       return true;
     }
   },
@@ -49,7 +49,7 @@ commands = {
   'search': {
     'syntax': ['search', 'search <pattern>'],
     'logic': function(args) {
-      lam.search(args['pattern']);
+      uam.search(args['pattern']);
       return true;
     }
   },
@@ -58,9 +58,9 @@ commands = {
     'syntax': ['ls', 'ls <pattern>'],
     'logic': function(args) {
       if (args['pattern'] != undefined) {
-        lam.ls(args['pattern']);
+        uam.ls(args['pattern']);
       } else {
-        lam.ls();
+        uam.ls();
       }
       return true;
     }
@@ -69,7 +69,7 @@ commands = {
   'version': {
     'syntax': ['version'],
     'logic': function() {
-      lam.version();
+      uam.version();
       return true;
     }
   }
@@ -77,15 +77,9 @@ commands = {
 
 parser = new Parser(commands)
 
-parser.addCommand('test')
-.set('syntax', ['test'])
-.set('logic', function() {
-  lam.test();
-})
-
 if (!parser.parseLexemes(argv['_'])) {
   if (argv['_'].length == 1) {
-    lam.run(argv['_'].pop());
+    uam.run(argv['_'].pop());
   } else {
     console.log('Unrecognized command.\n');
     parser.parse('help');
