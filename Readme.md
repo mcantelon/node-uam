@@ -67,7 +67,7 @@ uam requires Node and npm. Install using the following command.
 ### Developers
 
 If you've developed a local web application and want to publish it to the
-local web application registry, simply include a "local" element in your
+local web application registry, simply include a "uam" element in your
 package's package.json file. The element should be hash with a "start"
 element and, optionally, a "port" element (if your local web application
 can't have a port specified when run using the command-line).
@@ -75,7 +75,7 @@ can't have a port specified when run using the command-line).
 Here's an example package.json specification for a local web application
 which can be run on any port:
 
-  "local": {
+  "uam": {
     "start": "nide init -p {port}"
   },
 
@@ -85,7 +85,7 @@ available port when the web application is launched.
 Here's an example package.json specification for a local web application
 which can only be run on a specific port:
 
-  "local": {
+  "uam": {
     "start": "node /Users/mike/programming/js/uam/finance/app.js",
     "port": 3000
   }
