@@ -2,25 +2,28 @@
 
 NOTE: only opens browsers on Linux and OS X currently.
 
-Node-based local web applications are interesting. They can run on any
-operating system with Node installed on it. They are easy to write if you're
-familiar with web technologies. As browser technologies evolve, they will
-likely become more commonplace.
+Node-based unhosted web applications are pretty neat. They can run on any
+operating system with Node installed on it. They are, with the Node Package
+Manager, super easy to install. And they are easy to write if you're familiar
+with web technologies. As browser technologies evolve, they will likely become
+more commonplace.
 
-Local web applications feel a bit weird to use though. If you use them
+Unhosted web applications feel a bit weird to use though. If you use them
 regularly you end up having to do things like creating shell aliases to run
-them. There is also no definitive list of them to search through to find them.
+them. There is also no easy way to search for them on the web.
 
-This tool attempts to improve the situation a bit. uam makes it easy to
-discover local web applications and launch them in the browser. uam does
-this by leveraging the Node Package Manager (npm). 
+This tool attempts to improve the situation a bit. `uam` makes it easy to
+discover unhosted web applications others have created, install them, and
+launch them in your browser. uam does this by leveraging the Node Package
+Manager (npm). 
 
 Normally you have to do this to end up running a local web application:
 
 1. Hear about the local web application
 2. Install the local web application
 3. Create a shell alias to conveniently run the local web application
-4. Run the local web application
+4. Run the local web application (making sure it's TCP/IP port doesn't
+   conflict with anything else you're running.
 5. Navigate to the local web application in your browser
 
 With uam it's easier:
@@ -32,6 +35,10 @@ Once you've installed a package using uam you can run it using the following
 command syntax.
 
     uam run <package>
+
+`uam`, when running a package, will find a free TCP/IP port and set the
+`PORT` environmental variable to this port. This way if the uam packages you
+run can reference `PORT` and you can avoid TCP/IP port conflicts. 
 
 If the package's name doesn't conflict with a uam command you can also run it
 using the following command syntax.
@@ -57,6 +64,11 @@ To only show packages with names matching a pattern, use the following command
 syntax.
 
     uam search <search pattern>
+
+When you have no more use for a package, you can remove it using the following
+command:
+
+    uam rm <package>
 
 ### Requirements and Installation
 
