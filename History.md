@@ -10,7 +10,7 @@
   * Changed project name
   * Streamlined npm data fetching
 
-0.0.4 / 2003-03-06
+0.0.5 / 2003-03-06
 
 ==================
 

@@ -1,6 +1,6 @@
 {
     "name": "uam"
-  , "version": "0.0.4"
+  , "version": "0.0.5"
   , "description": "Unhosted application manager"
   , "keywords": ["unhosted", "application", "manager"]
   , "author": "Mike Cantelon <mcantelon@gmail.com>"
