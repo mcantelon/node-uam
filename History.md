@@ -9,3 +9,8 @@
 
   * Changed project name
   * Streamlined npm data fetching
+
+0.0.3 / 2003-03-06
+==================
+
+  * Bug fixes
