@@ -1,7 +1,5 @@
 # uam: unhosted web application manager
 
-NOTE: only opens browsers on Linux and OS X currently.
-
 Node-based unhosted web applications are pretty neat. They can run on any
 operating system with Node installed on it. They are, with the Node Package
 Manager, super easy to install. And they are easy to write if you're familiar
