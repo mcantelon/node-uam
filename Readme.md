@@ -63,7 +63,7 @@ syntax.
 
     uam search <search pattern>
 
-__Note:___ If you encounter errors while searching, try setting npm to use
+__Note:__ If you encounter errors while searching, try setting npm to use
 a mirror, such as registry.npmjs.eu. Example:
 
     npm config set registry http://registry.npmjs.eu
