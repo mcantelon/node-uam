@@ -65,6 +65,11 @@ syntax.
 
     uam search <search pattern>
 
+__Note:___ If you encounter errors while searching, try setting npm to use
+a mirror, such as registry.npmjs.eu. Example:
+
+    npm config set registry http://registry.npmjs.eu
+
 When you have no more use for a package, you can remove it using the following
 command:
 
