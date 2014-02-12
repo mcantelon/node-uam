@@ -1,6 +1,6 @@
 {
     "name": "uam"
-  , "version": "0.0.10"
+  , "version": "0.0.11"
   , "description": "Unhosted application manager"
   , "keywords": ["unhosted", "application", "manager"]
   , "author": "Mike Cantelon <mcantelon@gmail.com>"
@@ -10,7 +10,8 @@
     "request": ">= 2.1.1",
     "underscore": ">= 1.1.7",
     "open": "0.0.4",
-    "home-dir": "0.1.2"
+    "home-dir": "0.1.2",
+    "npmconf": "0.1.12"
   }
   , "main": "index.js"
   , "bin" : {
